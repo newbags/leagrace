@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LeaGrace | The Art of Leather &amp; Grace</title>
+<script src="./css/1.js"></script>
+<link rel="stylesheet" href="tailwind.css">
+<link href="./css/2.css" rel="stylesheet"/>
+<link href="./css/1.css" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#474743",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#f9f7f4",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#e8bea3",
+              "inverse-surface": "#30312e",
+              "on-tertiary-fixed": "#1b1c1b",
+              "secondary": "#5f5e5b",
+              "surface-container-low": "#f5f3ef",
+              "on-tertiary": "#ffffff",
+              "outline-variant": "#d3c3ba",
+              "surface-container-high": "#eae8e4",
+              "outline": "#82746d",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fbf9f5",
+              "on-error-container": "#93000a",
+              "tertiary": "#595957",
+              "secondary-fixed-dim": "#c9c6c2",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#ffdcc6",
+              "primary": "#71523c",
+              "on-primary-fixed": "#2c1606",
+              "inverse-primary": "#e8bea3",
+              "on-secondary-container": "#656461",
+              "on-primary-fixed-variant": "#5d402c",
+              "secondary-fixed": "#e5e2dd",
+              "primary-container": "#8c6a53",
+              "inverse-on-surface": "#f2f0ed",
+              "error": "#ba1a1a",
+              "surface-dim": "#dbdad6",
+              "background": "#fbf9f5",
+              "on-background": "#1b1c1a",
+              "surface-container-highest": "#e4e2de",
+              "on-surface-variant": "#50453e",
+              "on-tertiary-fixed-variant": "#474745",
+              "surface-variant": "#e4e2de",
+              "surface-tint": "#775842",
+              "surface": "#fbf9f5",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed": "#1c1c19",
+              "tertiary-fixed-dim": "#c8c6c4",
+              "secondary-container": "#e5e2dd",
+              "tertiary-fixed": "#e4e2e0",
+              "on-surface": "#1b1c1a",
+              "surface-container": "#efeeea",
+              "on-primary-container": "#fff5f0",
+              "tertiary-container": "#727170"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .lethargic-luxury-fade {
+        transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+      }
+      .font-noto-serif { font-family: 'Noto Serif', serif; }
+      .text-display-md { font-size: 2.25rem; line-height: 2.5rem; }
+      .text-label-md { font-size: 0.875rem; line-height: 1.25rem; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md dark:bg-surface-dark/85">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif tracking-[0.2em] uppercase text-on-surface dark:text-on-surface-dark" href="#">LeaGrace</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-noto-serif tracking-tighter text-on-surface-variant/70 dark:text-on-surface-variant-dark/70 hover:text-primary transition-colors duration-500" href="#story">Story</a>
+<a class="font-noto-serif tracking-tighter text-on-surface-variant/70 dark:text-on-surface-variant-dark/70 hover:text-primary transition-colors duration-500" href="#craft">Craft</a>
+<a class="font-noto-serif tracking-tighter text-on-surface-variant/70 dark:text-on-surface-variant-dark/70 hover:text-primary transition-colors duration-500" href="#gallery">Gallery</a>
+<a class="font-noto-serif tracking-tighter text-on-surface-variant/70 dark:text-on-surface-variant-dark/70 hover:text-primary transition-colors duration-500" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-label-md tracking-widest uppercase text-primary font-bold" onclick="jumpToPage()">EN/ZH</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="LeaGrace Leather Craft" class="w-full h-full object-cover grayscale-[20%] brightness-90" data-alt="Luxury handcrafted leather bag in soft lighting" src="./image/9.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 max-w-4xl">
+<span class="block text-label-md tracking-[0.4em] uppercase text-primary mb-6">Established 2009 · Guangzhou</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tight text-on-surface leading-tight mb-8">
+                    The Art of <br/>
+<span class="italic font-normal">Leather &amp; Grace</span>
+</h1>
+<p class="text-xl md:text-2xl font-light text-on-surface-variant max-w-2xl leading-relaxed mb-12">
+                    Celebrating 15 years of independent aesthetics. Each piece is a testament to time, hand-stitched for those who appreciate the poetry of slow craft.
+                </p>
+<a class="inline-block bg-primary text-on-primary px-10 py-5 text-label-md tracking-widest uppercase hover:opacity-90 transition-opacity" href="#gallery">
+                    Explore Collection
+                </a>
+</div>
+</section>
+<!-- About Section (Bilingual) -->
+<section class="py-32 px-8 bg-surface-container-low" id="story">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 space-y-12">
+<div class="space-y-4">
+<h2 class="font-headline text-display-md text-primary">Authentic Craftsmanship</h2>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-on-surface-variant leading-loose">
+<p class="font-body text-lg">
+                            Born in the heart of Guangzhou, LeaGrace has spent over a decade perfecting the dialogue between raw hide and refined form. Our studio thrives on independent aesthetics, rejecting the disposable for the eternal.
+                        </p>
+
+</div>
+<div class="flex flex-wrap gap-8 pt-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-label-md tracking-widest uppercase">Premium Materials</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="text-label-md tracking-widest uppercase">Hand-stitched</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 aspect-[3/4] overflow-hidden">
+<img alt="Studio Aesthetics" class="w-full h-full object-cover" data-alt="Artistic closeup of leather stitching tools" src="./image/6.png"/>
+</div>
+</div>
+</section>
+<!-- Craftsmanship Section -->
+<section class="py-32 px-8" id="craft">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20 text-center">
+<span class="text-label-md tracking-[0.3em] uppercase text-outline mb-4 block">The Process</span>
+<h2 class="font-headline text-5xl text-on-surface">Precision in Every Stitch</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20">
+<div class="group relative aspect-video overflow-hidden bg-surface-container">
+<img alt="Leather cutting" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="Hands cutting premium leather with precision" src="./image/2.png"/>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/10 transition-colors">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="text-label-md tracking-widest uppercase font-bold">The Selection of Finest Leathers</p>
+</div>
+</div>
+<div class="group relative aspect-video overflow-hidden bg-surface-container">
+<img alt="Leather sewing" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="Detailed view of sewing machine and leather thread" src="./image/5.png"/>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/10 transition-colors">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="text-label-md tracking-widest uppercase font-bold">Technique of the Masters</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Gallery -->
+<section class="py-32 px-8 bg-surface-container-highest/30" id="gallery">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-5xl text-on-surface mb-2">Signature Collection</h2>
+
+</div>
+<a class="text-label-md tracking-widest uppercase border-b border-primary pb-1 text-primary" href="#">View All</a>
+</div>
+<!-- Asymmetric Bento Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+<div class="col-span-2 row-span-2 aspect-square md:aspect-auto">
+<img alt="Collection Item 1" class="w-full h-full object-cover" data-alt="Elegant handbag on a minimalist pedestal" src="./image/11.png"/>
+</div>
+<div class="aspect-square">
+<img alt="Collection Item 2" class="w-full h-full object-cover" data-alt="Close up of a leather tote bag handle" src="./image/8.png"/>
+</div>
+<div class="aspect-square">
+<img alt="Collection Item 3" class="w-full h-full object-cover" data-alt="Leather backpack in a studio setting" src="./image/1.png"/>
+</div>
+<div class="col-span-2 aspect-[16/9] md:aspect-auto">
+<img alt="Collection Item 4" class="w-full h-full object-cover" data-alt="Collection of small leather goods" src="./image/4.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="py-40 px-8 text-center bg-surface flex flex-col items-center justify-center">
+
+<blockquote class="max-w-4xl">
+<p class="font-headline text-4xl md:text-5xl text-on-surface italic leading-snug mb-8">
+                    "A bag is a tribute to time, an answer to taste."
+                </p>
+<cite class="text-label-md tracking-widest uppercase text-outline not-italic">— LeaGrace Studio Philosophy</cite>
+</blockquote>
+</section>
+<!-- Contact/Inquiry Section -->
+<section class="py-32 px-8 bg-surface-container-high" id="contact">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-5xl text-on-surface mb-6">International Inquiries</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-12">
+                        For bespoke requests or wholesale inquiries from international partners, please use the form below. Our team in Guangzhou will respond within 48 hours.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-label-md tracking-widest uppercase text-outline">Email</p>
+<p class="text-on-surface font-semibold"><a href="mail:LeaGrace02@outlook.com">LeaGrace02@outlook.com</a></p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">chat</span>
+</div>
+<div>
+<p class="text-label-md tracking-widest uppercase text-outline">What'sApp</p>
+<p class="text-on-surface font-semibold"><a href="https://wa.me/085247042915">LeaGrace_Official</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface p-10 shadow-sm">
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">Subject</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors">
+<option>General Inquiry</option>
+<option>Bespoke Commission</option>
+<option>International Distribution</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors resize-none" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 text-label-md tracking-widest uppercase font-bold hover:opacity-90 transition-opacity" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-8 bg-surface-container-low dark:bg-surface-container-low-dark">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="text-lg font-serif tracking-widest text-on-surface">LEAGRACE</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-noto-serif text-label-md tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant-dark hover:text-primary transition-colors duration-500" href="#">Privacy Policy</a>
+<a class="font-noto-serif text-label-md tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant-dark hover:text-primary transition-colors duration-500" href="#">Shipping &amp; Returns</a>
+<a class="font-noto-serif text-label-md tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant-dark hover:text-primary transition-colors duration-500" href="#">International Inquiries</a>
+</div>
+<div class="font-noto-serif text-label-md tracking-widest uppercase text-on-surface-variant/60">
+                © 2015 LeaGrace Studio. Independent Aesthetics.
+            </div>
+</div>
+</footer>
+    <script>
+        function jumpToPage() {
+       
+            window.location.href = 'cn.html';
+            
+
+        }
+    </script>
+</body></html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<!-- 网页语言：英文 -->
+<html lang="en">
+<head>
+<!-- 字符编码：UTF-8 -->
+<meta charset="utf-8"/>
+<!-- 移动端适配：宽度=设备宽度，初始缩放1.0 -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- 网页标题 -->
+<title>丽格丝 | 皮革艺术与优雅</title>
+<!-- 引入外部脚本 -->
+<script src="./css/1.js"></script>
+<!-- 引入样式表 -->
+<link rel="stylesheet" href="tailwind.css">
+<link href="./css/2.css" rel="stylesheet"/>
+<link href="./css/1.css" rel="stylesheet"/>
+<!-- Tailwind 配置脚本 -->
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",        // 深色模式：class 控制
+        theme: {                  // 主题配置
+            extend: {             // 扩展主题
+                colors: {         // 自定义颜色（仅翻译配置含义，色值保留）
+                    "on-secondary-fixed-variant": "#474743",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#f9f7f4",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#e8bea3",
+                    "inverse-surface": "#30312e",
+                    "on-tertiary-fixed": "#1b1c1b",
+                    "secondary": "#5f5e5b",
+                    "surface-container-low": "#f5f3ef",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d3c3ba",
+                    "surface-container-high": "#eae8e4",
+                    "outline": "#82746d",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f5",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#595957",
+                    "secondary-fixed-dim": "#c9c6c2",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#ffdcc6",
+                    "primary": "#71523c",
+                    "on-primary-fixed": "#2c1606",
+                    "inverse-primary": "#e8bea3",
+                    "on-secondary-container": "#656461",
+                    "on-primary-fixed-variant": "#5d402c",
+                    "secondary-fixed": "#e5e2dd",
+                    "primary-container": "#8c6a53",
+                    "inverse-on-surface": "#f2f0ed",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dbdad6",
+                    "background": "#fbf9f5",
+                    "on-background": "#1b1c1a",
+                    "surface-container-highest": "#e4e2de",
+                    "on-surface-variant": "#50453e",
+                    "on-tertiary-fixed-variant": "#474745",
+                    "surface-variant": "#e4e2de",
+                    "surface-tint": "#775842",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#1c1c19",
+                    "tertiary-fixed-dim": "#c8c6c4",
+                    "secondary-container": "#e5e2dd",
+                    "tertiary-fixed": "#e4e2e0",
+                    "on-surface": "#1b1c1a",
+                    "surface-container": "#efeeea",
+                    "on-primary-container": "#fff5f0",
+                    "tertiary-container": "#727170"
+                },
+                fontFamily: {        // 自定义字体
+                    "headline": ["Noto Serif"],  // 标题字体
+                    "body": ["Manrope"],         // 正文字体
+                    "label": ["Manrope"]         // 标签字体
+                },
+                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+        },
+    }
+</script>
+<style>
+    /* 图标样式 */
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    /* 渐隐动画 */
+    .lethargic-luxury-fade {
+        transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    }
+    .font-noto-serif { font-family: 'Noto Serif', serif; }
+    .text-display-md { font-size: 2.25rem; line-height: 2.5rem; }
+    .text-label-md { font-size: 0.875rem; line-height: 1.25rem; }
+</style>
+</head>
+<!-- 页面主体：背景色+文字色 -->
+<body class="bg-background text-on-surface font-body selection:bg-primary/20">
+
+<!-- 顶部导航栏 -->
+<nav class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md dark:bg-surface-dark/85">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<!-- 品牌Logo -->
+<a class="text-2xl font-serif tracking-[0.2em] uppercase text-on-surface dark:text-on-surface-dark" href="#">丽格丝</a>
+<!-- 桌面端导航菜单 -->
+<div class="hidden md:flex items-center space-x-12">
+<a href="#story">品牌故事</a>
+<a href="#craft">工艺匠心</a>
+<a href="#gallery">产品画廊</a>
+<a href="#contact">联系我们</a>
+</div>
+<!-- 语言切换 + 移动端菜单按钮 -->
+<div class="flex items-center gap-4">
+<button class="text-label-md tracking-widest uppercase text-primary font-bold" onclick="jumpToPage()">中文/英文</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined">菜单</span>
+</button>
+</div>
+</div>
+</nav>
+
+<main>
+<!-- 首屏横幅区域 -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="丽格丝皮革工艺" class="w-full h-full object-cover grayscale-[20%] brightness-90" data-alt="柔光下的奢华手工皮具" src="./image/9.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 max-w-4xl">
+<span class="block text-label-md tracking-[0.4em] uppercase text-primary mb-6">创立于2009年 · 广州</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tight text-on-surface leading-tight mb-8">
+    皮革艺术 <br/>
+<span class="italic font-normal">与优雅</span>
+</h1>
+<p class="text-xl md:text-2xl font-light text-on-surface-variant max-w-2xl leading-relaxed mb-12">
+    15年独立美学坚守。每一件作品都是时光的见证，手工缝制，献给懂得慢工艺诗意的你。
+</p>
+<a class="inline-block bg-primary text-on-primary px-10 py-5 text-label-md tracking-widest uppercase hover:opacity-90 transition-opacity" href="#gallery">
+    探索系列
+</a>
+</div>
+</section>
+
+<!-- 关于我们（品牌故事） -->
+<section class="py-32 px-8 bg-surface-container-low" id="story">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 space-y-12">
+<div class="space-y-4">
+<h2 class="font-headline text-display-md text-primary">匠心工艺</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-on-surface-variant leading-loose">
+<p class="font-body text-lg">
+    丽格丝诞生于广州核心地带，十余年专注打磨皮革与形态的艺术对话。我们坚持独立美学，摒弃快消品，追求永恒质感。
+</p>
+</div>
+<div class="flex flex-wrap gap-8 pt-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-label-md tracking-widest uppercase">优质原料</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="text-label-md tracking-widest uppercase">手工缝制</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 aspect-[3/4] overflow-hidden">
+<img alt="工作室美学" class="w-full h-full object-cover" data-alt="皮革缝制工具艺术特写" src="./image/6.png"/>
+</div>
+</div>
+</section>
+
+<!-- 工艺展示区域 -->
+<section class="py-32 px-8" id="craft">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20 text-center">
+<span class="text-label-md tracking-[0.3em] uppercase text-outline mb-4 block">制作流程</span>
+<h2 class="font-headline text-5xl text-on-surface">一针一线 精益求精</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20">
+<!-- 皮革选材 -->
+<div class="group relative aspect-video overflow-hidden bg-surface-container">
+<img alt="皮革切割" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="精准切割优质皮革" src="./image/2.png"/>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/10 transition-colors">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="text-label-md tracking-widest uppercase font-bold">精选优质皮革</p>
+</div>
+</div>
+<!-- 缝制工艺 -->
+<div class="group relative aspect-video overflow-hidden bg-surface-container">
+<img alt="皮革缝制" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="缝纫机与皮革线细节" src="./image/5.png"/>
+<div class="absolute inset-0 flex items-center justify-center bg-on-surface/20 group-hover:bg-on-surface/10 transition-colors">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="text-label-md tracking-widest uppercase font-bold">大师级缝制工艺</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 产品画廊 -->
+<section class="py-32 px-8 bg-surface-container-highest/30" id="gallery">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-5xl text-on-surface mb-2">经典系列</h2>
+</div>
+<a class="text-label-md tracking-widest uppercase border-b border-primary pb-1 text-primary" href="#">查看全部</a>
+</div>
+<!-- 不规则网格布局 -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+<div class="col-span-2 row-span-2 aspect-square md:aspect-auto">
+<img alt="经典款1" class="w-full h-full object-cover" data-alt="极简台座上的优雅手提包" src="./image/11.png"/>
+</div>
+<div class="aspect-square">
+<img alt="经典款2" class="w-full h-full object-cover" data-alt="皮革托特包手柄特写" src="./image/8.png"/>
+</div>
+<div class="aspect-square">
+<img alt="经典款3" class="w-full h-full object-cover" data-alt="工作室场景中的皮革背包" src="./image/1.png"/>
+</div>
+<div class="col-span-2 aspect-[16/9] md:aspect-auto">
+<img alt="经典款4" class="w-full h-full object-cover" data-alt="小型皮具合集" src="./image/4.png"/>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 品牌格言区域 -->
+<section class="py-40 px-8 text-center bg-surface flex flex-col items-center justify-center">
+<blockquote class="max-w-4xl">
+<p class="font-headline text-4xl md:text-5xl text-on-surface italic leading-snug mb-8">
+    “一只包，是对时光的致敬，是对品味的回应。”
+</p>
+<cite class="text-label-md tracking-widest uppercase text-outline not-italic">— 丽格丝工作室理念</cite>
+</blockquote>
+</section>
+
+<!-- 联系/咨询区域 -->
+<section class="py-32 px-8 bg-surface-container-high" id="contact">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-5xl text-on-surface mb-6">国际咨询</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-12">
+    如需定制服务或国际合作伙伴批发咨询，请使用下方表单。我们广州团队将在48小时内回复。
+</p>
+<div class="space-y-8">
+<!-- 邮箱 -->
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-label-md tracking-widest uppercase text-outline">邮箱</p>
+<p class="text-on-surface font-semibold"><a href="mailto:LeaGrace02@outlook.com">LeaGrace02@outlook.com</a></p>
+</div>
+</div>
+<!-- WhatsApp -->
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">chat</span>
+</div>
+<div>
+<p class="text-label-md tracking-widest uppercase text-outline">WhatsApp</p>
+<p class="text-on-surface font-semibold"><a href="https://wa.me/085247042915">LeaGrace_Official</a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- 咨询表单 -->
+<div class="bg-surface p-10 shadow-sm">
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">姓名</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">邮箱地址</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">咨询主题</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors">
+<option>普通咨询</option>
+<option>定制服务</option>
+<option>国际合作</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-label-md tracking-widest uppercase text-outline">留言内容</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 transition-colors resize-none" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 text-label-md tracking-widest uppercase font-bold hover:opacity-90 transition-opacity" type="submit">
+    发送留言
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<!-- 页脚 -->
+<footer class="w-full py-20 px-8 bg-surface-container-low dark:bg-surface-container-low-dark">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="text-lg font-serif tracking-widest text-on-surface">丽格丝</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a href="#">隐私政策</a>
+<a href="#">配送与退换</a>
+<a href="#">国际咨询</a>
+</div>
+<div class="font-noto-serif text-label-md tracking-widest uppercase text-on-surface-variant/60">
+    © 2015 丽格丝工作室. 独立美学品牌.
+</div>
+</div>
+</footer>
+
+<script>
+    // 页面跳转函数（中英文切换）
+    function jumpToPage() {
+        // 方法1: 跳转到目标页面
+        window.location.href = 'index.html';
+        
+
+    }
+</script>
+</body>
+</html>
